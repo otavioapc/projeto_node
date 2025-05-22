@@ -11,4 +11,4 @@ const computadorSchema = new mongoose.Schema({
 
 const computador = mongoose.model("computadores", computadorSchema);
 
-export default carro;
+export default computador;

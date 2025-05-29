@@ -24,7 +24,7 @@ class ComputadorController {
   static async cadastrarComputador (req, res) {
     try {
       const novoComputador = await computador.create(req.body);
-      res.status(201).json({ message: "criado com sucesso", compuatador: novoComputador });
+      res.status(201).json({ message: "criado com sucesso", computador: novoComputador });
     } catch (erro) {
       res.status(500).json({ message: `${erro.message} - falha ao cadastrar computador` });
     }
